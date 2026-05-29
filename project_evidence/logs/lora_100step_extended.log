@@ -1,0 +1,65 @@
+[2026-05-28 14:18:53,441] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+/usr/local/lib/python3.8/dist-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/usr/local/lib/python3.8/dist-packages/torch/cuda/__init__.py:138: UserWarning: CUDA initialization: CUDA driver initialization failed, you might not have a CUDA gpu. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+2026-05-28 14:21:46.570052: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-28 14:21:47.329007: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/usr/local/lib/python3.8/dist-packages/accelerate/state.py:246: UserWarning: OMP_NUM_THREADS/MKL_NUM_THREADS unset, we set it at 64 to improve oob performance.
+  warnings.warn(
+Traceback (most recent call last):
+  File "vla-scripts/finetune.py", line 42, in <module>
+    from prismatic.models.backbones.llm.prompting import PurePromptBuilder, VicunaV15ChatPromptBuilder
+  File "/data/Raccoonbot_Openvla/openvla/prismatic/__init__.py", line 1, in <module>
+    from .models import available_model_names, available_models, get_model_description, load
+  File "/data/Raccoonbot_Openvla/openvla/prismatic/models/__init__.py", line 1, in <module>
+    from .load import available_model_names, available_models, get_model_description, load, load_vla
+  File "/data/Raccoonbot_Openvla/openvla/prismatic/models/load.py", line 16, in <module>
+    from prismatic.models.materialize import get_llm_backbone_and_tokenizer, get_vision_backbone_and_transform
+  File "/data/Raccoonbot_Openvla/openvla/prismatic/models/materialize.py", line 12, in <module>
+    from prismatic.models.backbones.llm import LLaMa2LLMBackbone, LLMBackbone, MistralLLMBackbone, PhiLLMBackbone
+  File "/data/Raccoonbot_Openvla/openvla/prismatic/models/backbones/llm/__init__.py", line 1, in <module>
+    from .base_llm import LLMBackbone
+  File "/data/Raccoonbot_Openvla/openvla/prismatic/models/backbones/llm/base_llm.py", line 33, in <module>
+    overwatch = initialize_overwatch(__name__)
+  File "/data/Raccoonbot_Openvla/openvla/prismatic/overwatch/overwatch.py", line 147, in initialize_overwatch
+    return DistributedOverwatch(name) if int(os.environ.get("WORLD_SIZE", -1)) != -1 else PureOverwatch(name)
+  File "/data/Raccoonbot_Openvla/openvla/prismatic/overwatch/overwatch.py", line 54, in __init__
+    self.logger, self.distributed_state = ContextAdapter(logging.getLogger(name), extra={}), PartialState()
+  File "/usr/local/lib/python3.8/dist-packages/accelerate/state.py", line 276, in __init__
+    self.set_device()
+  File "/usr/local/lib/python3.8/dist-packages/accelerate/state.py", line 791, in set_device
+    device_module.set_device(self.device)
+AttributeError: module 'torch.cpu' has no attribute 'set_device'
+[2026-05-28 14:21:53,909] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 16836) of binary: /usr/bin/python3.8
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 806, in main
+    run(args)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+vla-scripts/finetune.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-05-28_14:21:53
+  host      : 3f9d2f5fe067
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 16836)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

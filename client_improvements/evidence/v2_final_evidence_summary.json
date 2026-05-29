@@ -1,0 +1,86 @@
+[
+  {
+    "file": "evidence\\v2_blue_cube_lift_req1.csv",
+    "rows": 28,
+    "task": "lift",
+    "instruction": "lift the blue cube",
+    "target_color": "blue",
+    "object_shape": "cube",
+    "stages": [
+      "approach",
+      "close",
+      "descend",
+      "lift"
+    ],
+    "server_requests": 28,
+    "request_ratio": 1.0,
+    "avg_nonzero_latency_ms": 297.2327857028826,
+    "avg_step_total_ms": 811.72516073067,
+    "max_lift_m": 0.012043622322380543,
+    "max_move_xy_m": 0.0009612766801667402,
+    "last_lift_m": 0.012043622322380543,
+    "last_move_xy_m": 0.0009612766801667402
+  },
+  {
+    "file": "evidence\\v2_blue_cube_lift.csv",
+    "rows": 28,
+    "task": "lift",
+    "instruction": "lift the blue cube",
+    "target_color": "blue",
+    "object_shape": "cube",
+    "stages": [
+      "approach",
+      "close",
+      "descend",
+      "lift"
+    ],
+    "server_requests": 10,
+    "request_ratio": 0.35714285714285715,
+    "avg_nonzero_latency_ms": 303.85777996852994,
+    "avg_step_total_ms": 581.1751499672288,
+    "max_lift_m": 0.012043622322380543,
+    "max_move_xy_m": 0.0009612766801667402,
+    "last_lift_m": 0.012043622322380543,
+    "last_move_xy_m": 0.0009612766801667402
+  },
+  {
+    "file": "evidence\\v2_green_sphere_push.csv",
+    "rows": 35,
+    "task": "push",
+    "instruction": "move the green sphere forward",
+    "target_color": "green",
+    "object_shape": "sphere",
+    "stages": [
+      "descend",
+      "push"
+    ],
+    "server_requests": 12,
+    "request_ratio": 0.34285714285714286,
+    "avg_nonzero_latency_ms": 339.873925006638,
+    "avg_step_total_ms": 497.96314856170545,
+    "max_lift_m": 6.73048198223114e-05,
+    "max_move_xy_m": 0.010389671949434218,
+    "last_lift_m": -1.4501623809337616e-05,
+    "last_move_xy_m": 0.010389671949434218
+  },
+  {
+    "file": "evidence\\v2_red_cylinder_push_strong.csv",
+    "rows": 90,
+    "task": "push",
+    "instruction": "push the red cylinder forward",
+    "target_color": "red",
+    "object_shape": "cylinder",
+    "stages": [
+      "descend",
+      "push"
+    ],
+    "server_requests": 30,
+    "request_ratio": 0.3333333333333333,
+    "avg_nonzero_latency_ms": 333.6449499707669,
+    "avg_step_total_ms": 592.9231277848077,
+    "max_lift_m": 0.00027151405811309814,
+    "max_move_xy_m": 0.00903884211874425,
+    "last_lift_m": 0.00027151405811309814,
+    "last_move_xy_m": 0.00903884211874425
+  }
+]

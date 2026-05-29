@@ -1,0 +1,67 @@
+2026-05-28 13:38:43.241501: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-28 13:38:43.912536: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2026-05-28 13:41:44.670197: E tensorflow/compiler/xla/stream_executor/cuda/cuda_driver.cc:268] failed call to cuInit: CUDA_ERROR_NOT_INITIALIZED: initialization error
+2026-05-28 13:41:45.038925: W tensorflow/tsl/platform/cloud/google_auth_provider.cc:184] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "NOT_FOUND: Could not locate the credentials file.". Retrieving token from GCE failed with "FAILED_PRECONDITION: Error executing an HTTP request: libcurl code 6 meaning 'Couldn't resolve host name', error details: Could not resolve host: metadata.google.internal".
+INFO[build.py]: Loading dataset  from path: /data/code/Raccoonbot_Openvla/Mujoco/rlds_dataset_builder/raccoon_pick_place/raccoon_pick_place_dataset_builder.py
+INFO[build.py]: download_and_prepare for dataset raccoon_pick_place/1.0.0...
+INFO[dataset_builder.py]: Generating dataset raccoon_pick_place (/root/tensorflow_datasets/raccoon_pick_place/1.0.0)
+[1mDownloading and preparing dataset Unknown size (download: Unknown size, generated: Unknown size, total: Unknown size) to /root/tensorflow_datasets/raccoon_pick_place/1.0.0...[0m
+Generating splits...:   0%|          | 0/2 [00:00<?, ? splits/s]
+Generating train examples...: 0 examples [00:00, ? examples/s][A
+Generating train examples...: 4 examples [00:00, 31.22 examples/s][A
+Generating train examples...: 17 examples [00:00, 81.08 examples/s][A
+                                                                   [A
+Shuffling /root/tensorflow_datasets/raccoon_pick_place/1.0.0.incompleteHTMX0D/raccoon_pick_place-train.tfrecord*...:   0%|          | 0/18 [00:00<?, ? examples/s][A
+                                                                                                                                                                  [A                                                                Generating splits...:   0%|          | 0/2 [00:00<?, ? splits/s]Generating splits...:  50%|█████     | 1/2 [00:00<00:00,  3.87 splits/s]INFO[writer.py]: Done writing /root/tensorflow_datasets/raccoon_pick_place/1.0.0.incompleteHTMX0D/raccoon_pick_place-train.tfrecord*. Number of examples: 18 (shards: [18])
+
+Generating val examples...: 0 examples [00:00, ? examples/s][A
+                                                            [A
+Shuffling /root/tensorflow_datasets/raccoon_pick_place/1.0.0.incompleteHTMX0D/raccoon_pick_place-val.tfrecord*...:   0%|          | 0/2 [00:00<?, ? examples/s][A
+                                                                                                                                                               [A                                                                        Generating splits...:  50%|█████     | 1/2 [00:00<00:00,  3.87 splits/s]                                                                        INFO[writer.py]: Done writing /root/tensorflow_datasets/raccoon_pick_place/1.0.0.incompleteHTMX0D/raccoon_pick_place-val.tfrecord*. Number of examples: 2 (shards: [2])
+[1mDataset raccoon_pick_place downloaded and prepared to /root/tensorflow_datasets/raccoon_pick_place/1.0.0. Subsequent calls will reuse this data.[0m
+INFO[build.py]: Dataset generation complete...
+
+tfds.core.DatasetInfo(
+    name='raccoon_pick_place',
+    full_name='raccoon_pick_place/1.0.0',
+    description="""
+    TFDS/RLDS builder for the Raccoon pick-and-place dataset.
+    """,
+    homepage='local',
+    data_path='/root/tensorflow_datasets/raccoon_pick_place/1.0.0',
+    file_format=tfrecord,
+    download_size=Unknown size,
+    dataset_size=14.13 MiB,
+    features=FeaturesDict({
+        'episode_metadata': FeaturesDict({
+            'box_init_xy': Tensor(shape=(2,), dtype=float32),
+            'box_init_yaw': Scalar(shape=(), dtype=float32),
+            'episode_id': Scalar(shape=(), dtype=int32),
+            'goal_xy': Tensor(shape=(2,), dtype=float32),
+            'source_path': Text(shape=(), dtype=string),
+            'success': Scalar(shape=(), dtype=bool),
+        }),
+        'steps': Dataset({
+            'action': Tensor(shape=(7,), dtype=float32),
+            'discount': Scalar(shape=(), dtype=float32),
+            'is_first': Scalar(shape=(), dtype=bool),
+            'is_last': Scalar(shape=(), dtype=bool),
+            'is_terminal': Scalar(shape=(), dtype=bool),
+            'language_instruction': Text(shape=(), dtype=string),
+            'observation': FeaturesDict({
+                'image': Image(shape=(256, 256, 3), dtype=uint8),
+                'state': Tensor(shape=(8,), dtype=float32),
+            }),
+            'reward': Scalar(shape=(), dtype=float32),
+        }),
+    }),
+    supervised_keys=None,
+    disable_shuffling=False,
+    splits={
+        'train': <SplitInfo num_examples=18, num_shards=1>,
+        'val': <SplitInfo num_examples=2, num_shards=1>,
+    },
+    citation="""""",
+)
+

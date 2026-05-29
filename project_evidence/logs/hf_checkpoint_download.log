@@ -1,0 +1,32 @@
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Downloading 'model-00001-of-00004.safetensors' to '/data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/.cache/huggingface/download/IO4xwqmZYzFmxznkwkiNSBwO1H0=.fe956dad1f3ec9db4b347f86d682ef65f82b7cb638b16ca8bb7c1dc6c2c6a175.incomplete'
+Downloading 'generation_config.json' to '/data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/.cache/huggingface/download/3EVKVggOldJcKSsGjSdoUCN1AyQ=.2cefc1e51e6ccfe846d2b509ced403df73a8efe2.incomplete'
+Download complete. Moving file to /data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/generation_config.json
+Downloading 'model-00002-of-00004.safetensors' to '/data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/.cache/huggingface/download/t9msAuTjAZjuQnmzGOwTjiptvIU=.7d8c4276a41fee2bcd860c66426074361a0551c94a461197b7866454a8532a88.incomplete'
+Downloading 'dataset_statistics.json' to '/data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/.cache/huggingface/download/4Cw2asS0la9cwZEZgVKjgGUhPs4=.2f536d85121a1927180075125979f191bf84be9d.incomplete'
+Downloading 'config.json' to '/data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/.cache/huggingface/download/8_PA_wEVGiVa2goH2H4KQOQpvVY=.a8f4e19b6465873c858bb103d2160f9470094886.incomplete'
+Downloading '.gitattributes' to '/data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/.cache/huggingface/download/wPaCkH-WbT7GsmxMKKrNZTV4nSM=.a6344aac8c09253b3b630fb776ae94478aa0275b.incomplete'
+Downloading 'added_tokens.json' to '/data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/.cache/huggingface/download/SeqzFlf9ZNZ3or_wZAOIdsM3Yxw=.8671820d1bb0dfd4dd92d5bd0fa9b5a7773f843e.incomplete'
+Download complete. Moving file to /data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/dataset_statistics.json
+Downloading 'model-00003-of-00004.safetensors' to '/data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/.cache/huggingface/download/DaGOU-KRMVrY0aYktrsE34tL0Bs=.917531dc715eb7e914cf194a1516af876e742230a3478068e1c8cc45840824b3.incomplete'
+Download complete. Moving file to /data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/added_tokens.json
+Download complete. Moving file to /data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/.gitattributes
+Download complete. Moving file to /data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/config.json
+Fetching 15 files:   7%|▋         | 1/15 [00:00<00:04,  2.98it/s]Downloading 'model-00004-of-00004.safetensors' to '/data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/.cache/huggingface/download/-dFtyT7kcgbTHt1cy9JKqruJCR4=.de78f6e364c36feb329fb8431aaba47147210f154774a4f530f72f4898cebc1a.incomplete'
+Downloading 'model.safetensors.index.json' to '/data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/.cache/huggingface/download/yVzAsSxRSINSz-tQbpx-TLpfkLU=.bd7cc8ff8070ead248023feae55303f5a3b900d1.incomplete'
+Downloading 'special_tokens_map.json' to '/data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/.cache/huggingface/download/ahkChHUJFxEmOdq5GDFEmerRzCY=.ab75c8e0a22550f0667501a0c52758f071a9efd8.incomplete'
+Downloading 'preprocessor_config.json' to '/data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/.cache/huggingface/download/PYH5dHjks7Ei0Yd3X0Z8xIwsCNQ=.c804c0dfcb9655fe2933d2fe20ec3a210068bb82.incomplete'
+Download complete. Moving file to /data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/model.safetensors.index.json
+Download complete. Moving file to /data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/special_tokens_map.json
+Downloading 'tokenizer.json' to '/data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/.cache/huggingface/download/HgM_lKo9sdSCfRtVg7MMFS7EKqo=.591f1fc6ff695d967513100f707e66d5bf731414.incomplete'
+Download complete. Moving file to /data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/preprocessor_config.json
+Download complete. Moving file to /data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/tokenizer.json
+Downloading 'tokenizer.model' to '/data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/.cache/huggingface/download/7iVfz3cUOMr-hyjiqqRDHEwVBAM=.9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347.incomplete'
+Downloading 'tokenizer_config.json' to '/data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/.cache/huggingface/download/vzaExXFZNBay89bvlQv-ZcI6BTg=.7566269cef6fd7301700397bcc988fcab8ca0e52.incomplete'
+Download complete. Moving file to /data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/tokenizer_config.json
+Download complete. Moving file to /data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/tokenizer.model
+Download complete. Moving file to /data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/model-00004-of-00004.safetensors
+Download complete. Moving file to /data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/model-00001-of-00004.safetensors
+Fetching 15 files:  40%|████      | 6/15 [15:53<25:05, 167.32s/it]Download complete. Moving file to /data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/model-00003-of-00004.safetensors
+Download complete. Moving file to /data/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot/model-00002-of-00004.safetensors
+Fetching 15 files:  47%|████▋     | 7/15 [18:49<22:31, 168.93s/it]Fetching 15 files: 100%|██████████| 15/15 [18:49<00:00, 75.28s/it]
+/data/2024405002_kim_mingi_physical_ai_project/repos/Raccoonbot_Openvla/openvla/openvla-runs/openvla-7b-finetuned-raccoonbot

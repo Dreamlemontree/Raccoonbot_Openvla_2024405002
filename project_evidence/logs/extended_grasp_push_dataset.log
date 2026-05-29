@@ -1,0 +1,64 @@
+Target color counts: {'red': 5, 'blue': 5, 'green': 5, 'yellow': 5}
+[Attempt 0001] episode_id=000001 | task_type='push' | color='yellow' | target_xy=(-0.077, 0.193) | instruction='push the yellow cylinder' | success=False | success_counts={'red': 0, 'blue': 0, 'green': 0, 'yellow': 0}
+[Attempt 0002] episode_id=000001 | task_type='push' | color='green' | target_xy=(0.079, 0.173) | instruction='move the green cylinder forward' | success=False | success_counts={'red': 0, 'blue': 0, 'green': 0, 'yellow': 0}
+[Attempt 0003] episode_id=000001 | task_type='grasp' | color='green' | target_xy=(-0.086, 0.197) | instruction='pick up the green cylinder' | success=True | success_counts={'red': 0, 'blue': 0, 'green': 1, 'yellow': 0}
+[Attempt 0004] episode_id=000002 | task_type='grasp' | color='blue' | target_xy=(0.026, 0.237) | instruction='grab the blue cylinder' | success=False | success_counts={'red': 0, 'blue': 0, 'green': 1, 'yellow': 0}
+[Attempt 0005] episode_id=000002 | task_type='push' | color='yellow' | target_xy=(0.036, 0.234) | instruction='move the yellow cylinder forward' | success=False | success_counts={'red': 0, 'blue': 0, 'green': 1, 'yellow': 0}
+[Attempt 0006] episode_id=000002 | task_type='grasp' | color='green' | target_xy=(-0.033, 0.225) | instruction='grab the green cylinder' | success=True | success_counts={'red': 0, 'blue': 0, 'green': 2, 'yellow': 0}
+[Attempt 0007] episode_id=000003 | task_type='grasp' | color='yellow' | target_xy=(-0.055, 0.246) | instruction='grasp the yellow cylinder' | success=False | success_counts={'red': 0, 'blue': 0, 'green': 2, 'yellow': 0}
+[Attempt 0008] episode_id=000003 | task_type='grasp' | color='yellow' | target_xy=(-0.048, 0.224) | instruction='lift the yellow cylinder' | success=True | success_counts={'red': 0, 'blue': 0, 'green': 2, 'yellow': 1}
+[Attempt 0009] episode_id=000004 | task_type='grasp' | color='red' | target_xy=(-0.032, 0.163) | instruction='lift the red cylinder' | success=False | success_counts={'red': 0, 'blue': 0, 'green': 2, 'yellow': 1}
+[Attempt 0010] episode_id=000004 | task_type='push' | color='blue' | target_xy=(0.044, 0.168) | instruction='move the blue cylinder forward' | success=False | success_counts={'red': 0, 'blue': 0, 'green': 2, 'yellow': 1}
+[Attempt 0011] episode_id=000004 | task_type='grasp' | color='yellow' | target_xy=(-0.025, 0.235) | instruction='pick up the yellow cylinder' | success=False | success_counts={'red': 0, 'blue': 0, 'green': 2, 'yellow': 1}
+[Attempt 0012] episode_id=000004 | task_type='push' | color='red' | target_xy=(-0.053, 0.214) | instruction='move the red cylinder forward' | success=False | success_counts={'red': 0, 'blue': 0, 'green': 2, 'yellow': 1}
+[Attempt 0013] episode_id=000004 | task_type='push' | color='blue' | target_xy=(-0.055, 0.209) | instruction='move the blue cylinder forward' | success=False | success_counts={'red': 0, 'blue': 0, 'green': 2, 'yellow': 1}
+[Attempt 0014] episode_id=000004 | task_type='push' | color='yellow' | target_xy=(0.000, 0.190) | instruction='move the yellow cylinder forward' | success=False | success_counts={'red': 0, 'blue': 0, 'green': 2, 'yellow': 1}
+[Attempt 0015] episode_id=000004 | task_type='grasp' | color='blue' | target_xy=(0.069, 0.230) | instruction='lift the blue cylinder' | success=True | success_counts={'red': 0, 'blue': 1, 'green': 2, 'yellow': 1}
+[Attempt 0016] episode_id=000005 | task_type='grasp' | color='red' | target_xy=(-0.081, 0.167) | instruction='grasp the red cylinder' | success=True | success_counts={'red': 1, 'blue': 1, 'green': 2, 'yellow': 1}
+[Attempt 0017] episode_id=000006 | task_type='grasp' | color='yellow' | target_xy=(0.056, 0.170) | instruction='grasp the yellow cylinder' | success=True | success_counts={'red': 1, 'blue': 1, 'green': 2, 'yellow': 2}
+[Attempt 0018] episode_id=000007 | task_type='push' | color='red' | target_xy=(-0.008, 0.179) | instruction='move the red cylinder forward' | success=False | success_counts={'red': 1, 'blue': 1, 'green': 2, 'yellow': 2}
+[Attempt 0019] task_type='push' | color='red' | exception: 도달할 수 없는 좌표입니다: (-2.06, 12.27, 10.00) cm
+[Attempt 0020] episode_id=000007 | task_type='grasp' | color='blue' | target_xy=(0.041, 0.193) | instruction='grab the blue cylinder' | success=True | success_counts={'red': 1, 'blue': 2, 'green': 2, 'yellow': 2}
+[Attempt 0021] episode_id=000008 | task_type='grasp' | color='red' | target_xy=(-0.034, 0.221) | instruction='lift the red cylinder' | success=False | success_counts={'red': 1, 'blue': 2, 'green': 2, 'yellow': 2}
+[Attempt 0022] episode_id=000008 | task_type='grasp' | color='red' | target_xy=(0.079, 0.229) | instruction='pick up the red cylinder' | success=False | success_counts={'red': 1, 'blue': 2, 'green': 2, 'yellow': 2}
+[Attempt 0023] episode_id=000008 | task_type='push' | color='red' | target_xy=(-0.049, 0.184) | instruction='move the red cylinder forward' | success=False | success_counts={'red': 1, 'blue': 2, 'green': 2, 'yellow': 2}
+[Attempt 0024] episode_id=000008 | task_type='grasp' | color='yellow' | target_xy=(0.078, 0.220) | instruction='pick up the yellow cylinder' | success=True | success_counts={'red': 1, 'blue': 2, 'green': 2, 'yellow': 3}
+[Attempt 0025] episode_id=000009 | task_type='push' | color='blue' | target_xy=(0.097, 0.221) | instruction='move the blue cylinder forward' | success=False | success_counts={'red': 1, 'blue': 2, 'green': 2, 'yellow': 3}
+[Attempt 0026] task_type='grasp' | color='blue' | exception: 도달할 수 없는 좌표입니다: (9.56, 24.15, 2.00) cm
+[Attempt 0027] episode_id=000009 | task_type='grasp' | color='red' | target_xy=(0.090, 0.195) | instruction='lift the red cylinder' | success=False | success_counts={'red': 1, 'blue': 2, 'green': 2, 'yellow': 3}
+[Attempt 0028] episode_id=000009 | task_type='push' | color='red' | target_xy=(-0.013, 0.226) | instruction='move the red cylinder forward' | success=False | success_counts={'red': 1, 'blue': 2, 'green': 2, 'yellow': 3}
+[Attempt 0029] episode_id=000009 | task_type='grasp' | color='red' | target_xy=(0.081, 0.163) | instruction='grab the red cylinder' | success=True | success_counts={'red': 2, 'blue': 2, 'green': 2, 'yellow': 3}
+[Attempt 0030] episode_id=000010 | task_type='push' | color='red' | target_xy=(-0.011, 0.200) | instruction='push the red cylinder' | success=False | success_counts={'red': 2, 'blue': 2, 'green': 2, 'yellow': 3}
+[Attempt 0031] episode_id=000010 | task_type='grasp' | color='red' | target_xy=(-0.018, 0.192) | instruction='grasp the red cylinder' | success=True | success_counts={'red': 3, 'blue': 2, 'green': 2, 'yellow': 3}
+[Attempt 0032] task_type='push' | color='blue' | exception: 도달할 수 없는 좌표입니다: (4.81, 26.57, 3.50) cm
+[Attempt 0033] episode_id=000011 | task_type='grasp' | color='blue' | target_xy=(0.022, 0.187) | instruction='grab the blue cylinder' | success=True | success_counts={'red': 3, 'blue': 3, 'green': 2, 'yellow': 3}
+[Attempt 0034] episode_id=000012 | task_type='push' | color='red' | target_xy=(-0.048, 0.172) | instruction='push the red cylinder' | success=False | success_counts={'red': 3, 'blue': 3, 'green': 2, 'yellow': 3}
+[Attempt 0035] episode_id=000012 | task_type='grasp' | color='yellow' | target_xy=(0.028, 0.218) | instruction='pick up the yellow cylinder' | success=False | success_counts={'red': 3, 'blue': 3, 'green': 2, 'yellow': 3}
+[Attempt 0036] episode_id=000012 | task_type='push' | color='yellow' | target_xy=(-0.037, 0.199) | instruction='push the yellow cylinder' | success=False | success_counts={'red': 3, 'blue': 3, 'green': 2, 'yellow': 3}
+[Attempt 0037] episode_id=000012 | task_type='push' | color='green' | target_xy=(-0.061, 0.205) | instruction='move the green cylinder forward' | success=False | success_counts={'red': 3, 'blue': 3, 'green': 2, 'yellow': 3}
+[Attempt 0038] episode_id=000012 | task_type='grasp' | color='yellow' | target_xy=(0.054, 0.192) | instruction='grab the yellow cylinder' | success=True | success_counts={'red': 3, 'blue': 3, 'green': 2, 'yellow': 4}
+[Attempt 0039] episode_id=000013 | task_type='grasp' | color='green' | target_xy=(0.022, 0.162) | instruction='grab the green cylinder' | success=False | success_counts={'red': 3, 'blue': 3, 'green': 2, 'yellow': 4}
+[Attempt 0040] episode_id=000013 | task_type='grasp' | color='green' | target_xy=(-0.001, 0.224) | instruction='lift the green cylinder' | success=True | success_counts={'red': 3, 'blue': 3, 'green': 3, 'yellow': 4}
+[Attempt 0041] episode_id=000014 | task_type='push' | color='green' | target_xy=(0.023, 0.216) | instruction='move the green cylinder forward' | success=False | success_counts={'red': 3, 'blue': 3, 'green': 3, 'yellow': 4}
+[Attempt 0042] task_type='push' | color='green' | exception: 도달할 수 없는 좌표입니다: (1.55, 12.11, 10.00) cm
+[Attempt 0043] episode_id=000014 | task_type='push' | color='red' | target_xy=(0.005, 0.211) | instruction='push the red cylinder' | success=False | success_counts={'red': 3, 'blue': 3, 'green': 3, 'yellow': 4}
+[Attempt 0044] episode_id=000014 | task_type='grasp' | color='red' | target_xy=(0.006, 0.238) | instruction='lift the red cylinder' | success=False | success_counts={'red': 3, 'blue': 3, 'green': 3, 'yellow': 4}
+[Attempt 0045] episode_id=000014 | task_type='grasp' | color='green' | target_xy=(0.028, 0.213) | instruction='grasp the green cylinder' | success=True | success_counts={'red': 3, 'blue': 3, 'green': 4, 'yellow': 4}
+[Attempt 0046] episode_id=000015 | task_type='grasp' | color='red' | target_xy=(0.083, 0.244) | instruction='pick up the red cylinder' | success=False | success_counts={'red': 3, 'blue': 3, 'green': 4, 'yellow': 4}
+[Attempt 0047] episode_id=000015 | task_type='grasp' | color='red' | target_xy=(0.018, 0.219) | instruction='grasp the red cylinder' | success=True | success_counts={'red': 4, 'blue': 3, 'green': 4, 'yellow': 4}
+[Attempt 0048] episode_id=000016 | task_type='push' | color='yellow' | target_xy=(0.034, 0.233) | instruction='move the yellow cylinder forward' | success=False | success_counts={'red': 4, 'blue': 3, 'green': 4, 'yellow': 4}
+[Attempt 0049] episode_id=000016 | task_type='grasp' | color='yellow' | target_xy=(-0.075, 0.204) | instruction='pick up the yellow cylinder' | success=True | success_counts={'red': 4, 'blue': 3, 'green': 4, 'yellow': 5}
+[Attempt 0050] episode_id=000017 | task_type='grasp' | color='blue' | target_xy=(0.012, 0.202) | instruction='pick up the blue cylinder' | success=True | success_counts={'red': 4, 'blue': 4, 'green': 4, 'yellow': 5}
+[Attempt 0051] episode_id=000018 | task_type='push' | color='red' | target_xy=(-0.064, 0.198) | instruction='push the red cylinder' | success=False | success_counts={'red': 4, 'blue': 4, 'green': 4, 'yellow': 5}
+[Attempt 0052] task_type='push' | color='blue' | exception: 도달할 수 없는 좌표입니다: (7.50, 26.99, 3.50) cm
+[Attempt 0053] episode_id=000018 | task_type='push' | color='green' | target_xy=(-0.057, 0.216) | instruction='move the green cylinder forward' | success=False | success_counts={'red': 4, 'blue': 4, 'green': 4, 'yellow': 5}
+[Attempt 0054] episode_id=000018 | task_type='push' | color='blue' | target_xy=(0.085, 0.216) | instruction='push the blue cylinder' | success=False | success_counts={'red': 4, 'blue': 4, 'green': 4, 'yellow': 5}
+[Attempt 0055] episode_id=000018 | task_type='grasp' | color='blue' | target_xy=(0.056, 0.198) | instruction='pick up the blue cylinder' | success=True | success_counts={'red': 4, 'blue': 5, 'green': 4, 'yellow': 5}
+[Attempt 0056] episode_id=000019 | task_type='grasp' | color='green' | target_xy=(0.011, 0.235) | instruction='pick up the green cylinder' | success=True | success_counts={'red': 4, 'blue': 5, 'green': 5, 'yellow': 5}
+[Attempt 0057] episode_id=000020 | task_type='push' | color='red' | target_xy=(-0.082, 0.186) | instruction='move the red cylinder forward' | success=False | success_counts={'red': 4, 'blue': 5, 'green': 5, 'yellow': 5}
+[Attempt 0058] episode_id=000020 | task_type='grasp' | color='red' | target_xy=(-0.026, 0.174) | instruction='grasp the red cylinder' | success=False | success_counts={'red': 4, 'blue': 5, 'green': 5, 'yellow': 5}
+[Attempt 0059] episode_id=000020 | task_type='grasp' | color='red' | target_xy=(0.079, 0.191) | instruction='pick up the red cylinder' | success=True | success_counts={'red': 5, 'blue': 5, 'green': 5, 'yellow': 5}
+완료: success episodes = 20/20, attempts = 59
+색상별 성공 episode 수: {'red': 5, 'blue': 5, 'green': 5, 'yellow': 5}
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 115.9782.
+

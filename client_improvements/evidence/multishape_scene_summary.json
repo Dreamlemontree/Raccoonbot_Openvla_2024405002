@@ -1,0 +1,15 @@
+{
+  "base_xml": "Raccoon_colored_cylinder.xml",
+  "out_xml": "Raccoon_multishape_objects.xml",
+  "shape_by_color": {
+    "red": "cylinder",
+    "blue": "cube",
+    "green": "sphere",
+    "yellow": "cylinder"
+  },
+  "new_object_types": [
+    "cube",
+    "sphere"
+  ],
+  "note": "blue object is changed to cube, green object is changed to sphere; red/yellow remain cylinders."
+}

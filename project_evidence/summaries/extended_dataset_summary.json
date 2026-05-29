@@ -1,0 +1,34 @@
+{
+  "dataset_root": "/data/Raccoonbot_Openvla/Mujoco/raccoon_grasp_push_extended",
+  "num_episodes": 20,
+  "task_counts": {
+    "grasp": 7,
+    "push": 13
+  },
+  "color_counts": {
+    "red": 5,
+    "green": 5,
+    "blue": 5,
+    "yellow": 5
+  },
+  "num_unique_instructions": 14,
+  "instruction_counts": {
+    "grasp the red cylinder": 1,
+    "grasp the green cylinder": 1,
+    "move the red cylinder forward": 2,
+    "lift the red cylinder": 1,
+    "move the blue cylinder forward": 1,
+    "push the green cylinder": 2,
+    "grab the green cylinder": 1,
+    "pick up the blue cylinder": 1,
+    "move the green cylinder forward": 1,
+    "push the yellow cylinder": 3,
+    "move the yellow cylinder forward": 1,
+    "push the blue cylinder": 3,
+    "lift the yellow cylinder": 1,
+    "pick up the red cylinder": 1
+  },
+  "push_moved_dist_min": 1.9051471957742815e-10,
+  "push_moved_dist_max": 7.609614420108256e-09,
+  "push_moved_dist_mean": 3.945970637733411e-09
+}

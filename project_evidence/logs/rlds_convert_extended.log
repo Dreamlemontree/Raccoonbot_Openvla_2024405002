@@ -1,0 +1,25 @@
+[OK] train/episode_000001 | steps 25 -> 25 | success=True
+[OK] train/episode_000002 | steps 25 -> 25 | success=True
+[OK] train/episode_000003 | steps 33 -> 33 | success=True
+[OK] train/episode_000004 | steps 25 -> 25 | success=True
+[OK] train/episode_000005 | steps 33 -> 33 | success=True
+[OK] train/episode_000007 | steps 25 -> 25 | success=True
+[OK] train/episode_000008 | steps 25 -> 25 | success=True
+[OK] train/episode_000009 | steps 33 -> 33 | success=True
+[OK] train/episode_000010 | steps 33 -> 33 | success=True
+[OK] train/episode_000011 | steps 33 -> 33 | success=True
+[OK] train/episode_000012 | steps 33 -> 33 | success=True
+[OK] train/episode_000013 | steps 33 -> 33 | success=True
+[OK] train/episode_000014 | steps 33 -> 33 | success=True
+[OK] train/episode_000015 | steps 33 -> 33 | success=True
+[OK] train/episode_000016 | steps 33 -> 33 | success=True
+[OK] train/episode_000017 | steps 25 -> 25 | success=True
+[OK] train/episode_000018 | steps 33 -> 33 | success=True
+[OK] train/episode_000019 | steps 33 -> 33 | success=True
+[OK] val/episode_000006 | steps 33 -> 33 | success=True
+[OK] val/episode_000020 | steps 25 -> 25 | success=True
+
+Done.
+train episodes: 18
+val episodes  : 2
+output root   : /data/code/Raccoonbot_Openvla/Mujoco/raccoon_dataset/openvla_rlds_intermediate_extended

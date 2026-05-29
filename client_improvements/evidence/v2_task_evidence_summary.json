@@ -1,0 +1,87 @@
+[
+  {
+    "file": "evidence\\v2_blue_cube_lift.csv",
+    "rows": 28,
+    "task": "lift",
+    "instruction": "lift the blue cube",
+    "target_color": "blue",
+    "object_shape": "cube",
+    "stages": [
+      "approach",
+      "close",
+      "descend",
+      "lift"
+    ],
+    "server_requests": 10,
+    "request_ratio": 0.35714285714285715,
+    "avg_nonzero_latency_ms": 303.85777996852994,
+    "avg_step_total_ms": 581.1751499672288,
+    "max_lift_m": 0.012043622322380543,
+    "max_move_xy_m": 0.0009612766801667402,
+    "last_lift_m": 0.012043622322380543,
+    "last_move_xy_m": 0.0009612766801667402
+  },
+  {
+    "file": "evidence\\v2_green_sphere_lift.csv",
+    "rows": 60,
+    "task": "lift",
+    "instruction": "lift the green sphere",
+    "target_color": "green",
+    "object_shape": "sphere",
+    "stages": [
+      "approach",
+      "close",
+      "descend",
+      "lift"
+    ],
+    "server_requests": 20,
+    "request_ratio": 0.3333333333333333,
+    "avg_nonzero_latency_ms": 300.1599350012839,
+    "avg_step_total_ms": 554.1622266639024,
+    "max_lift_m": 0.0021618055179715157,
+    "max_move_xy_m": 0.0017470508979011586,
+    "last_lift_m": 0.0,
+    "last_move_xy_m": 0.0004561262265805198
+  },
+  {
+    "file": "evidence\\v2_red_cylinder_push_tuned.csv",
+    "rows": 80,
+    "task": "push",
+    "instruction": "push the red cylinder forward",
+    "target_color": "red",
+    "object_shape": "cylinder",
+    "stages": [
+      "approach",
+      "descend",
+      "push"
+    ],
+    "server_requests": 27,
+    "request_ratio": 0.3375,
+    "avg_nonzero_latency_ms": 310.434125924345,
+    "avg_step_total_ms": 533.2058637519367,
+    "max_lift_m": 7.890816777944565e-05,
+    "max_move_xy_m": 0.009037854955828088,
+    "last_lift_m": 7.890723645687103e-05,
+    "last_move_xy_m": 0.009037854955828088
+  },
+  {
+    "file": "evidence\\v2_green_sphere_push.csv",
+    "rows": 35,
+    "task": "push",
+    "instruction": "move the green sphere forward",
+    "target_color": "green",
+    "object_shape": "sphere",
+    "stages": [
+      "descend",
+      "push"
+    ],
+    "server_requests": 12,
+    "request_ratio": 0.34285714285714286,
+    "avg_nonzero_latency_ms": 339.873925006638,
+    "avg_step_total_ms": 497.96314856170545,
+    "max_lift_m": 6.73048198223114e-05,
+    "max_move_xy_m": 0.010389671949434218,
+    "last_lift_m": -1.4501623809337616e-05,
+    "last_move_xy_m": 0.010389671949434218
+  }
+]

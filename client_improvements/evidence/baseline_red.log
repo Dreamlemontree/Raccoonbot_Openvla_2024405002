@@ -1,0 +1,50 @@
+[CLEANUP] removed 63 existing image files from rollout_outputs\episode_000001
+[DEBUG] current ee from get_ee_pose = (0.00, 14.74, 9.44) cm
+[DEBUG] IK(current ee) = [-0.002687362869719087, -10.001873547968852, -140.00075588457761, 60.002629432546456]
+[SCENE] instruction='grasp the red cylinder' | target_color='red' | target_xy=(0.010, 0.236) | objects={'red': {'body_name': 'target_object', 'xy': [0.009973811459739815, 0.23628057408214753], 'yaw': 0.15031161875357502}, 'blue': {'body_name': 'target_object_blue', 'xy': [0.06438026786401777, 0.23524166855796358], 'yaw': -0.37584977124505964}, 'green': {'body_name': 'target_object_green', 'xy': [-0.003872223554245463, 0.1745882795860017], 'yaw': -0.570213484603048}, 'yellow': {'body_name': 'target_object_yellow', 'xy': [-0.03848765589931942, 0.22300486301716155], 'yaw': 0.2564642116878273}}
+[000] OK | final_delta=[-0.0014, 0.005, -0.001] | move=[-0.0014, 0.005, -0.001] | target=[-0.0014, 0.1523, 0.0932] | gripper=0.0 | retries=0
+[001] OK | final_delta=[-0.0005, 0.0028, 0.0] | move=[-0.0005, 0.0028, 0.0] | target=[-0.002, 0.1545, 0.093] | gripper=0.0 | retries=0
+[002] OK | final_delta=[-0.0014, 0.005, -0.001] | move=[-0.0014, 0.005, -0.001] | target=[-0.0034, 0.1591, 0.0917] | gripper=0.0 | retries=0
+[003] OK | final_delta=[-0.0007, 0.005, -0.0026] | move=[-0.0007, 0.005, -0.0026] | target=[-0.0041, 0.1635, 0.0889] | gripper=0.0 | retries=0
+[004] OK | final_delta=[-0.0007, 0.0029, 0.0] | move=[-0.0007, 0.0029, 0.0] | target=[-0.0048, 0.1658, 0.0888] | gripper=0.0 | retries=0
+[005] OK | final_delta=[-0.0007, 0.0029, 0.0] | move=[-0.0007, 0.0029, 0.0] | target=[-0.0055, 0.1683, 0.0885] | gripper=0.0 | retries=0
+[006] OK | final_delta=[-0.0007, 0.0029, 0.0] | move=[-0.0007, 0.0029, 0.0] | target=[-0.0063, 0.1708, 0.0881] | gripper=0.0 | retries=0
+[007] OK | final_delta=[-0.0005, 0.005, -0.0037] | move=[-0.0005, 0.005, -0.0037] | target=[-0.0068, 0.1754, 0.084] | gripper=0.0 | retries=0
+[008] OK | final_delta=[-0.0005, 0.005, -0.0016] | move=[-0.0005, 0.005, -0.0016] | target=[-0.0073, 0.1798, 0.0823] | gripper=0.0 | retries=0
+[009] OK | final_delta=[-0.0005, 0.005, -0.0026] | move=[-0.0005, 0.005, -0.0026] | target=[-0.0077, 0.1841, 0.0794] | gripper=0.0 | retries=0
+[010] OK | final_delta=[-0.0005, 0.005, -0.0026] | move=[-0.0005, 0.005, -0.0026] | target=[-0.0082, 0.1885, 0.0766] | gripper=0.0 | retries=0
+[011] OK | final_delta=[-0.0001, 0.0035, -0.001] | move=[-0.0001, 0.0035, -0.001] | target=[-0.0082, 0.1914, 0.0753] | gripper=0.0 | retries=0
+[012] OK | final_delta=[-0.0006, 0.005, 0.0016] | move=[-0.0006, 0.005, 0.0016] | target=[-0.0088, 0.1959, 0.0764] | gripper=0.0 | retries=0
+[013] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0088, 0.1952, 0.0756] | gripper=0.0 | retries=0
+[014] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0088, 0.195, 0.075] | gripper=0.0 | retries=0
+[015] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0088, 0.1948, 0.0745] | gripper=0.0 | retries=0
+[016] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0088, 0.1946, 0.0739] | gripper=0.0 | retries=0
+[017] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0088, 0.1944, 0.0733] | gripper=0.0 | retries=0
+[018] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0088, 0.1942, 0.0727] | gripper=0.0 | retries=0
+[019] OK | final_delta=[-0.0001, 0.0014, -0.005] | move=[-0.0001, 0.0014, -0.005] | target=[-0.0089, 0.1954, 0.0671] | gripper=0.0 | retries=0
+[020] OK | final_delta=[-0.0001, 0.0035, 0.0009] | move=[-0.0001, 0.0035, 0.0009] | target=[-0.0089, 0.1985, 0.0679] | gripper=0.0 | retries=0
+[021] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0089, 0.198, 0.0672] | gripper=0.0 | retries=0
+[022] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0089, 0.1977, 0.0666] | gripper=0.0 | retries=0
+[023] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0089, 0.1975, 0.066] | gripper=0.0 | retries=0
+[024] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0089, 0.1973, 0.0654] | gripper=0.0 | retries=0
+[025] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0089, 0.197, 0.0648] | gripper=0.0 | retries=0
+[026] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0089, 0.1968, 0.0642] | gripper=0.0 | retries=0
+[027] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0089, 0.1965, 0.0636] | gripper=0.0 | retries=0
+[028] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0088, 0.1963, 0.063] | gripper=0.0 | retries=0
+[029] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0088, 0.196, 0.0624] | gripper=0.0 | retries=0
+[030] OK | final_delta=[-0.0001, 0.0014, -0.005] | move=[-0.0001, 0.0014, -0.005] | target=[-0.0089, 0.1972, 0.0568] | gripper=0.0 | retries=0
+[031] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0089, 0.1968, 0.0567] | gripper=0.0 | retries=0
+[032] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0089, 0.1965, 0.0561] | gripper=0.0 | retries=0
+[033] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0089, 0.1962, 0.0555] | gripper=0.0 | retries=0
+[034] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0089, 0.1959, 0.0549] | gripper=0.0 | retries=0
+[035] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0088, 0.1957, 0.0543] | gripper=0.0 | retries=0
+[036] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0088, 0.1954, 0.0537] | gripper=0.0 | retries=0
+[037] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0088, 0.1951, 0.0532] | gripper=0.0 | retries=0
+[038] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0088, 0.1948, 0.0526] | gripper=0.0 | retries=0
+[039] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0088, 0.1946, 0.052] | gripper=0.0 | retries=0
+[040] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0088, 0.1943, 0.0514] | gripper=0.0 | retries=0
+[041] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0088, 0.194, 0.0509] | gripper=0.0 | retries=0
+[042] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0088, 0.1937, 0.0503] | gripper=0.0 | retries=0
+[043] OK | final_delta=[-0.0, -0.0, 0.0] | move=[-0.0, -0.0, 0.0] | target=[-0.0087, 0.1934, 0.0498] | gripper=1.0 | retries=0
+
+[STOP] interrupted by user
