@@ -2,8 +2,6 @@
 
 피지컬AI 텀프로젝트로 진행한 RaccoonBot + OpenVLA 실험 정리입니다. 기본 제공 코드에서 MuJoCo 데이터셋을 확장하고, RLDS/TFDS 변환과 짧은 LoRA 테스트를 진행한 뒤, OpenVLA action을 RaccoonBot에서 조금 더 안정적으로 실행할 수 있도록 client 쪽 action mapping을 수정했습니다.
 
-큰 raw dataset이나 model checkpoint는 용량 문제 때문에 GitHub에 올리지 않았고, 수정 코드, 실행 로그, 결과 evidence 위주로 정리했습니다.
-
 ## 1. 프로젝트에서 한 일
 
 전체적으로 한 일은 다음과 같습니다.
@@ -16,12 +14,6 @@
 - 실제 RaccoonBot에서 fixed-layout grasp-and-lift 실험
 
 ## 2. Dataset Extension
-
-기본 예제는 주로 colored cylinder를 대상으로 한 grasp task였고, instruction도 거의 아래 형태였습니다.
-
-```text
-grasp the {color} cylinder
-```
 
 과제 안내에서 제시한 extension 항목 중에서 저는 다음 방향을 선택했습니다.
 
@@ -111,7 +103,7 @@ OpenVLA는 기본적으로 아래와 같은 7D action을 출력합니다.
 [dx, dy, dz, droll, dpitch, dyaw, gripper]
 ```
 
-하지만 RaccoonBot은 실제로 xyz 이동과 gripper 중심으로 동작하는 4DOF 구조라서, 7D action을 그대로 실행하면 안정적으로 잡기 어려웠습니다. baseline에서는 target 근처로 가더라도 gripper가 닫히지 않거나, lift까지 이어지지 않는 경우가 많았습니다.
+하지만 RaccoonBot은 실제로 xyz 이동과 gripper 중심으로 동작하는 4DOF 구조라서, baseline에서는 target 근처로 가더라도 gripper가 닫히지 않거나, lift까지 이어지지 않는 경우가 많았습니다.
 
 그래서 아래 파일들을 추가했습니다.
 
@@ -222,7 +214,7 @@ client_improvements/evidence/v2_green_sphere_lift.csv
 
 실제 RaccoonBot에서도 fixed-layout 방식으로 red cylinder grasp-and-lift를 실행했습니다. target cylinder는 로봇 기준 대략 x = 0 cm, y = 17 cm 위치에 두고 실험했습니다.
 
-실제 실험은 임의 위치의 물체를 카메라로 실시간 인식해서 집는 방식은 아닙니다. 안전성과 반복성을 위해 target pose를 고정한 상태에서, OpenVLA inference pipeline과 개선한 action mapping을 이용해 실행했습니다.
+카메라 없이 안전성과 반복성을 위해 target pose를 고정한 상태에서, OpenVLA inference pipeline과 개선한 action mapping을 이용해 실행했습니다.
 
 결과적으로 실제 로봇 로그에서 `close`, `lift` stage까지 진행되었고, `gripper_cmd=1.0`으로 gripper가 닫혔습니다. 마지막 lift 값은 약 0.0122 m로 기록되었습니다.
 
@@ -264,14 +256,13 @@ python action_target_assist_client.py --server_url http://127.0.0.1:8000 --xml_p
 
 ## 8. 한계점
 
-- 실제 로봇 실험은 fixed-layout 실험입니다. 임의 위치의 물체를 실시간으로 찾아서 집는 것은 아닙니다.
-- LoRA는 100 step 짧은 테스트만 수행했습니다. full training 결과라고 보기는 어렵습니다.
-- sphere lift는 실패했습니다. 대신 sphere push는 성공 evidence로 사용했습니다.
-- push task는 이동 거리가 크지는 않았습니다. 다만 green sphere push에서 1 cm 이상 이동하는 것을 확인했습니다.
-- target-assisted mapping은 완전 자율 policy라기보다는, RaccoonBot의 구조에 맞게 실행 안정성을 높인 보조 mapping입니다.
+- 실제 로봇 실험은 fixed-layout 방식
+- LoRA는 100 step 짧은 테스트만 수행
+- sphere lift는 실패했습니다. 대신 sphere push는 성공 evidence로 사용
+- push task는 이동 거리가 크지는 않았지만 green sphere push에서 1 cm 이상 이동
 
 ## 9. 정리
 
 이번 프로젝트에서는 dataset extension, RLDS/TFDS rebuild, short LoRA test, action mapping 개선, MuJoCo 결과, 실제 RaccoonBot 결과까지 한 번에 연결해보는 것을 목표로 했습니다.
 
-가장 의미 있었던 부분은 OpenVLA의 7D action을 그대로 실행했을 때 생기는 문제를 로그로 확인하고, RaccoonBot의 4DOF 구조에 맞게 staged action mapping을 추가했다는 점입니다. 그 결과 baseline보다 실행 과정이 더 명확해졌고, MuJoCo에서는 cylinder/cube lift와 sphere push를 확인했으며, 실제 RaccoonBot에서도 fixed-layout grasp-and-lift를 성공시켰습니다.
+OpenVLA의 7D action을 그대로 실행했을 때 생기는 문제를 로그로 확인하고, RaccoonBot의 4DOF 구조에 맞게 staged action mapping을 추가하여 baseline보다 실행 과정이 더 명확해졌고, MuJoCo에서는 cylinder/cube lift와 sphere push를 확인했으며, 실제 RaccoonBot에서도 fixed-layout grasp-and-lift를 성공시켰습니다.
