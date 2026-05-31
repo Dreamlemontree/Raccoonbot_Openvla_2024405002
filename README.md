@@ -1,6 +1,6 @@
 # RaccoonBot OpenVLA 텀프로젝트
 
-피지컬AI 텀프로젝트로 진행한 RaccoonBot + OpenVLA 실험 정리입니다. 기본 제공 코드에서 MuJoCo 데이터셋을 확장하고, RLDS/TFDS 변환과 짧은 LoRA 테스트를 진행한 뒤, OpenVLA action을 RaccoonBot에서 조금 더 안정적으로 실행할 수 있도록 client 쪽 action mapping을 수정했습니다.
+이번 피지컬AI 텀프로젝트는 기본 제공 코드에서 MuJoCo 데이터셋을 확장하고, RLDS/TFDS 변환과 짧은 LoRA 테스트를 진행한 뒤, OpenVLA action을 RaccoonBot에서 조금 더 안정적으로 실행할 수 있도록 client 쪽 action mapping을 수정하는 순서로 진행하였습니다.
 
 ## 1. 프로젝트에서 한 일
 
@@ -15,17 +15,15 @@
 
 ## 2. Dataset Extension
 
-과제 안내에서 제시한 extension 항목 중에서 저는 다음 방향을 선택했습니다.
-
 - 새로운 task 추가: `push`, `lift`
-- 더 다양한 language instruction 추가
+- 다양한 language instruction 추가
 - 새로운 object type 추가: `cube`, `sphere`
 
 ### 2.1 Grasp / Push Dataset
 
 먼저 기존 cylinder 환경에서 grasp 외에 push task metadata와 다양한 instruction template을 추가했습니다.
 
-예시 instruction은 다음과 같습니다.
+다음은 instruction 예시입니다.
 
 ```text
 grasp the red cylinder
@@ -82,7 +80,7 @@ client_improvements/evidence/multishape_scene_summary.json
 Mujoco/rlds_dataset_builder/raccoon_pick_place/raccoon_pick_place_dataset_builder.py
 ```
 
-TFDS build 결과 train 18개, val 2개가 생성되었습니다. 이후 100 step short LoRA test도 진행했습니다. full training을 끝까지 돌린 것은 아니고, 수정한 dataset이 OpenVLA fine-tuning script에서 정상적으로 로드되고 checkpoint 저장까지 되는지 확인하는 목적이었습니다.
+TFDS build 결과 train 18개, val 2개가 생성되었습니다. 이후 100 step short LoRA test도 진행했습니다. full training 대신 수정한 dataset이 OpenVLA fine-tuning script에서 정상적으로 로드되고 checkpoint 저장까지 되는지 확인했고 관련 로그는 다음과 같습니다.
 
 관련 로그:
 
@@ -218,7 +216,7 @@ client_improvements/evidence/v2_green_sphere_lift.csv
 
 카메라 없이 안전성과 반복성을 위해 target pose를 고정한 상태에서, OpenVLA inference pipeline과 개선한 action mapping을 이용해 실행했습니다.
 
-결과적으로 실제 로봇 로그에서 `close`, `lift` stage까지 진행되었고, `gripper_cmd=1.0`으로 gripper가 닫혔습니다. 마지막 lift 값은 약 0.0122 m로 기록되었습니다.
+결과적으로 실제 로봇 로그에서 `close`, `lift` stage까지 진행되었고, `gripper_cmd=1.0`으로 gripper가 닫혔습니다. 마지막 lift 값은 약 0.0122m로 기록되었습니다.
 
 관련 evidence:
 
