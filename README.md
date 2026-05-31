@@ -181,6 +181,8 @@ target-assisted action mapping을 적용한 뒤에는 MuJoCo에서 red / blue cy
 ```text
 client_improvements/evidence/target_assist_red_success.csv
 client_improvements/evidence/target_assist_blue_success.csv
+client_improvements/evidence/target_assist_red_success.mp4
+client_improvements/evidence/target_assist_blue_success.mp4
 ```
 
 측정된 lift 결과:
@@ -261,7 +263,29 @@ python action_target_assist_client.py --server_url http://127.0.0.1:8000 --xml_p
 - sphere lift는 실패했습니다. 대신 sphere push는 성공 evidence로 사용
 - push task는 이동 거리가 크지는 않았지만 green sphere push에서 1 cm 이상 이동
 
-## 9. 정리
+## 9. MuJoCo Dataset Episode Visualization
+
+확장 dataset 자체의 episode도 프레임을 연결하여 확인했습니다. 실제 로봇 영상과 별도로, MuJoCo에서 생성한 demonstration이 의도한 순서대로 진행되는지 확인하기 위한 자료입니다.
+
+```text
+client_improvements/visualize_dataset_episode.py
+project_evidence/videos/extended_push_episode_000003.mp4
+project_evidence/screenshots/extended_push_episode_000003_contact_sheet.png
+```
+
+## 10. Pitch 제어와 Sphere Lift 실패 분석
+
+현재 `raccoon_env.py`에서는 OpenVLA가 출력하는 7D action 중 xyz 이동과 gripper command를 중심으로 실행하고, `droll`, `dpitch`, `dyaw`는 직접 추종하지 않습니다. RaccoonBot은 full 6D end-effector 제어가 가능한 구조가 아니기 때문입니다. 실제 로봇 IK에서는 4번 관절을 다음 관계식으로 계산하여 gripper가 아래 방향을 유지하도록 보정했습니다.
+
+```text
+th4 = -(th2 + th3) - 90 deg
+```
+
+즉 pitch를 완전히 고려하지 않은 것이 아니라, 임의 pitch 명령을 추종하는 대신 grasp 안정성을 위해 고정 자세로 제한한 것입니다. 가변 pitch 제어를 추가하려면 4번 관절 범위와 충돌 가능성을 함께 검증해야 하므로, 이번 실험에서는 안전한 고정 자세를 사용했습니다.
+
+Sphere lift가 불안정했던 이유도 이 제한과 관련이 있습니다. Cylinder와 cube는 gripper가 양쪽에서 접촉할 수 있는 면이 비교적 안정적이지만, sphere는 접촉점이 좁고 곡면을 따라 미끄러지기 쉽습니다. 여기에 접근 위치 오차와 고정 pitch 자세가 함께 작용하면 gripper 중심이 조금만 어긋나도 lift 과정에서 물체가 빠질 수 있습니다. 실제 viewer에서도 sphere가 들어 올려지는 중 떨어졌고, 로그의 최대 lift 값도 약 0.0022 m로 작았습니다. 따라서 sphere는 push 성공 결과를 사용하고 lift는 한계 사례로 남겼습니다.
+
+## 11. 정리
 
 이번 프로젝트에서는 dataset extension, RLDS/TFDS rebuild, short LoRA test, action mapping 개선, MuJoCo 결과, 실제 RaccoonBot 결과까지 한 번에 연결해보는 것을 목표로 했습니다.
 
